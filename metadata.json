@@ -1,0 +1,7 @@
+{
+  "name": "Cancer Heroes Foundation",
+  "description": "A compassionate global community platform providing emotional resilience, human dignity, and collective care for patients, survivors, and caregivers affected by cancer.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
