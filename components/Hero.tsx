@@ -1,9 +1,10 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 px-6">
+    /* 1. INCREASED pt-20 to pt-32 to clear the fixed Header */
+    /* 2. ADDED pb-32 to accommodate the card we are pushing lower */
+    <section className="relative min-h-[90vh] flex items-center pt-44 px-6 pb-32">
       {/* Background Decor */}
       <div className="absolute inset-0 overflow-hidden -z-10">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -mr-64 -mt-64"></div>
@@ -31,29 +32,24 @@ const Hero: React.FC = () => {
               Join the Community
             </button>
           </div>
-          <div className="flex items-center space-x-2">
-            <div className="h-1 w-12 bg-hope"></div>
-            <p className="text-slate-text font-medium italic">
-              Patients. Survivors. Caregivers. Families. No one faces cancer alone.
-            </p>
-          </div>
         </div>
 
-        <div className="relative">
-          <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative">
+        <div className="relative mb-20 lg:mb-0">
+          <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl relative z-10">
             <img 
-              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=2000&auto=format&fit=crop" 
-              alt="Community Support" 
-              className="object-cover w-full h-full"
+              src="/img/BonnieCrombie.jpg" 
+              alt="Cancer Heroes Event" 
+              className="object-cover object-top w-full h-full"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent"></div>
-            <div className="absolute bottom-8 left-8 right-8 text-white">
-              <p className="text-2xl font-serif mb-2">"Healing is not only medical. It is human. It is collective."</p>
-              <p className="text-hope font-bold text-lg">— Shirin Ariff, Founder</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6 text-white">
+              <p className="text-xl font-serif mb-1">"Healing is not only medical. It is human. It is collective."</p>
+              <p className="text-hope font-bold text-base">— Shirin Ariff, Founder</p>
             </div>
           </div>
-          {/* Decorative stats card */}
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl hidden md:block max-w-xs border-t-4 border-hope">
+          
+          {/* 3. MOVED DOWN TO -bottom-24 TO STOP OVERLAPPING THE IMAGE SUBJECTS */}
+          <div className="absolute -bottom-24 -left-6 bg-white p-6 rounded-2xl shadow-2xl hidden md:block max-w-xs border-t-4 border-hope z-20">
             <div className="flex items-center space-x-3 mb-2">
               <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

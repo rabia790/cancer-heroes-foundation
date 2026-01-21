@@ -48,7 +48,7 @@ const FounderSection: React.FC = () => {
             <div className="relative">
               <div className="aspect-square rounded-full border-[16px] border-white shadow-2xl overflow-hidden">
                 <img 
-                  src="https://picsum.photos/id/64/800/800" 
+                  src="/img/DSCF5665.JPG" 
                   alt="Founder Shirin Ariff" 
                   className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
                 />

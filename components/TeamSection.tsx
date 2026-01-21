@@ -6,19 +6,19 @@ const members = [
     name: "Shirin Ariff",
     role: "Director of Community Engagement",
     desc: "Shirin leads community partnerships, fundraising, and public engagement, bringing vision and heart to building awareness worldwide.",
-    img: "https://picsum.photos/id/1027/400/500"
+    img: "/img/Shirin.png"
   },
   {
     name: "Chetan Salwan",
     role: "Director of Clinical Programs",
     desc: "Chetan oversees support group design and health education integrity, ensuring services align with patient-centered care principles.",
-    img: "https://picsum.photos/id/1012/400/500"
+    img: "/img/Chetan.png"
   },
   {
     name: "Ambarish Sharma",
     role: "Director of Operations",
     desc: "Ambarish leads digital infrastructure, operational strategy, and patient platforms to scale the Foundation's impact securely.",
-    img: "https://picsum.photos/id/1005/400/500"
+    img: "/img/Ambarish.png"
   }
 ];
 
@@ -38,7 +38,7 @@ const TeamSection: React.FC = () => {
                 <img 
                   src={m.img} 
                   alt={m.name} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"
+                  className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors"></div>
               </div>
