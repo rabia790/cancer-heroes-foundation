@@ -67,26 +67,6 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
-
-      {/* Floating Action Button for AI Companion */}
-      {!showCompanion && (
-        <button
-          onClick={() => setShowCompanion(true)}
-          className="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-2xl hover:bg-primary/90 transition-all transform hover:scale-110 z-40 group"
-          title="Talk to our Resilience Companion"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-          </svg>
-          <span className="absolute right-full mr-4 bg-charcoal text-white text-sm px-3 py-1 rounded hidden group-hover:block whitespace-nowrap">
-            Need a moment of support?
-          </span>
-        </button>
-      )}
-
-      {showCompanion && (
-        <AICompanion onClose={() => setShowCompanion(false)} />
-      )}
     </div>
   );
 };
