@@ -48,7 +48,7 @@ const App: React.FC = () => {
           <TeamSection />
         </div>
 
-        <section className="bg-primary py-24 px-6 text-white text-center relative overflow-hidden">
+        <section id="call-to-action" className="bg-primary py-24 px-6 text-white text-center relative overflow-hidden">
           {/* Decorative Hope Amber Accent */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-hope opacity-20 blur-3xl -mr-16 -mt-16 rounded-full"></div>
           <div className="max-w-3xl mx-auto relative z-10">

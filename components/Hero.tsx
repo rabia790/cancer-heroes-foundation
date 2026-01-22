@@ -25,12 +25,15 @@ const Hero: React.FC = () => {
             We believe in a world where every individual and family affected by cancer feels supported, honoured, and empowered at every stage of their journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="bg-charcoal text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-charcoal/90 transition-all shadow-xl">
-              Our Vision
-            </button>
-            <button className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/5 transition-all">
+           <a 
+            href="#our-why" 
+            className="bg-charcoal text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-charcoal/90 transition-all shadow-xl text-center inline-block"
+          >
+            Our Vision
+          </a>
+            <a href="#call-to-action" className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/5 transition-all">
               Join the Community
-            </button>
+            </a>
           </div>
         </div>
 

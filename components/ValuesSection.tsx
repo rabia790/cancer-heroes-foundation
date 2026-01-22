@@ -2,12 +2,12 @@
 import React from 'react';
 
 const values = [
-  { title: "Compassion", desc: "No one should walk the cancer journey alone.", icon: "🤍" },
-  { title: "Dignity", desc: "Every story matters and every experience deserves respect.", icon: "👑" },
-  { title: "Community", desc: "Healing grows stronger when we care together.", icon: "🤝" },
-  { title: "Resilience", desc: "Strength can be taught, practiced, and shared.", icon: "🌿" },
-  { title: "Hope", desc: "One spark of hope can change a life.", icon: "✨" },
-  { title: "Transformation", desc: "Cancer can be transformed into growth and purpose.", icon: "🦋" }
+  { title: "Compassion", desc: "No one should walk the cancer journey alone.", image: "/img/compassion.png" },
+  { title: "Dignity", desc: "Every story matters and every experience deserves respect.", image: "/img/dignity.png" },
+  { title: "Community", desc: "Healing grows stronger when we care together.", image: "/img/community.png" },
+  { title: "Resilience", desc: "Strength can be taught, practiced, and shared.", image: "/img/resilience.png" },
+  { title: "Hope", desc: "One spark of hope can change a life.", image: "/img/hope.png" },
+  { title: "Transformation", desc: "Cancer can be transformed into growth and purpose.", image: "/img/transformation.png" }
 ];
 
 const ValuesSection: React.FC = () => {
@@ -22,9 +22,13 @@ const ValuesSection: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((val, idx) => (
             <div key={idx} className="group p-8 bg-cream/30 rounded-3xl border border-transparent hover:border-primary/20 hover:bg-cream/50 transition-all duration-300 shadow-sm hover:shadow-md">
-              <div className="text-4xl mb-6 transform group-hover:scale-110 transition-transform inline-block bg-white w-16 h-16 flex items-center justify-center rounded-2xl shadow-inner">
-                {val.icon}
-              </div>
+             <div className="mb-6 overflow-hidden rounded-2xl w-20 h-20 shadow-md group-hover:scale-110 transition-transform duration-500">
+              <img 
+                src={val.image} 
+                alt={val.title} 
+                className="w-full h-full object-cover" 
+              />
+            </div>
               <h4 className="text-xl font-serif font-bold text-charcoal mb-3">{val.title}</h4>
               <p className="text-slate-text leading-relaxed">{val.desc}</p>
             </div>
