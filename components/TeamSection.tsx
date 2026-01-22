@@ -18,7 +18,8 @@ const members = [
     name: "Ambarish Sharma",
     role: "Director of Operations",
     desc: "Ambarish leads digital infrastructure, operational strategy, and patient platforms to scale the Foundation's impact securely.",
-    img: "/img/Ambarish.png"
+    img: "/img/Ambarish.png",
+    imgPos: "object-[70%_top]"
   }
 ];
 
@@ -38,7 +39,7 @@ const TeamSection: React.FC = () => {
                 <img 
                   src={m.img} 
                   alt={m.name} 
-                  className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"
+                  className={`w-full h-full object-cover ${m.imgPos || 'object-top'} grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105`}
                 />
                 <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors"></div>
               </div>

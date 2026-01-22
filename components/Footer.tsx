@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
           <p>© 2026 Cancer Heroes Foundation. Built with compassion.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {/* If you don't want a PDF, just leave a 'Contact' link here instead of legal stuff */}
-            <a href="mailto:info@cancerheroes.com" className="hover:text-charcoal transition-colors">Contact Us</a>
+            <a href="mailto:info@cancerheroesfoundation.com" className="hover:text-charcoal transition-colors">Contact Us</a>
           </div>
         </div>
       </div>
